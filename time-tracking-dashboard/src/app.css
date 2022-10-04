@@ -1,4 +1,52 @@
 body{
-    background-color: black;
+    background-color: hsl(226, 43%, 10%);
     color:white;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,h2,h3,h4,h5,p{
+    font-weight: 300;
+    margin:0;
+}
+h1{
+    font-size: calc(20px + (36 - 22) * ((100vw - 375px) / (1440 - 300)));
+}
+h2{
+    font-size: calc(18px + (32 - 22) * ((100vw - 375px) / (1440 - 300)));
+}
+
+h4{
+    font-size: calc(16px + (16 - 14) * ((100vw - 375px) / (1440 - 300)));
+   color: hsl(236, 100%, 87%); 
+}
+
+
+.all{
+    display:flex;  
+    align-items: center;
+    height: 90vh;
+    border: 5px red solid;
+}
+
+.usercard{
+    flex-basis:15%;
+    border: 5px blue solid;
+}
+
+.timers{
+    border: 5px green solid;
+    flex-basis:85%;
+
+}
+
+@media (max-width:567px){
+
+}
+
+
+@media (max-width:375px) {
+    .all{
+        display:flex;
+        flex-direction: column;
+    }
 }
