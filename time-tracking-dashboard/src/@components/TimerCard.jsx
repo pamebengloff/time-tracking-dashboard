@@ -1,9 +1,9 @@
-'react';
+import "./timercard-styles.css"
 
 export function TimerCard(props) {
     return (
-        <div>
-            
+        <div className="card-container">
+            hola
         </div>
     );
 }

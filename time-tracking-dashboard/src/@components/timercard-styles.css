@@ -1,0 +1,10 @@
+
+.card-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100px;
+
+    margin: auto;
+    border:3px blue solid;
+}
+

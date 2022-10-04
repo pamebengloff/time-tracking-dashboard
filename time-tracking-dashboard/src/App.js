@@ -1,4 +1,4 @@
-import { Timers } from "./@components/Timers";
+import { TimerCard } from "./@components/TimerCard";
 import { UserCard } from "./@components/UserCard";
 import {getDataForCards} from "./getDataForCards"
 import "./app.css"
@@ -16,7 +16,10 @@ function App() {
     </div>
 
     <div className="timers">
-      <Timers/>
+      <TimerCard/>
+      <TimerCard/>
+      <TimerCard/>
+      <TimerCard/>
     </div>
 
     </div>

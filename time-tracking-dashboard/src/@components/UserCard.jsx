@@ -1,6 +1,5 @@
 import "./usercard-styles.css";
 import Userphoto from "../@images/image-jeremy.png";
-import { Timers } from "./Timers";
 
 export function UserCard(props) {
     return (
@@ -8,12 +7,14 @@ export function UserCard(props) {
     <div className="user-container">
 
             <div className="info-container">
+                
                 <div className="user-img">
                     <img src={Userphoto} alt="" />
                 </div>
-                <div className="user-text">
+               
+               <div className="user-text">
                     <h4>Report for</h4>
-                    <h2>Jeremy <br /> Robson</h2>
+                    <h2>Jeremy Robson</h2>
                 </div>
             </div>
 

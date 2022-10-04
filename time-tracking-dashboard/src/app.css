@@ -16,33 +16,37 @@ h2{
 }
 
 h4{
-    font-size: calc(16px + (16 - 14) * ((100vw - 375px) / (1440 - 300)));
-   color: hsl(236, 100%, 87%); 
+    font-size: calc(16px + (16 - 12) * ((100vw - 375px) / (1440 - 300)));
+    color: hsl(236, 100%, 87%); 
 }
 
 
 .all{
     display:flex;  
     align-items: center;
+    justify-content: space-evenly;
     height: 90vh;
     border: 5px red solid;
 }
 
 .usercard{
+    display: flex;
+   
     flex-basis:15%;
-    border: 5px blue solid;
+  /*  border: 5px blue solid;*/
+    height: 50%;
 }
 
 .timers{
+    height: 50%;
     border: 5px green solid;
     flex-basis:85%;
-
+    display: flex;
+    flex-flow: row wrap;
+    
 }
 
-@media (max-width:567px){
-
-}
-
+@media (max-width:567px){}
 
 @media (max-width:375px) {
     .all{

@@ -3,10 +3,8 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: hsl(235, 46%, 20%);
-
-    display: flex;
-    flex-direction: column;
-    /*max-width: 80%; /*de lo que mide el div userscard en app.css*/
+    
+    height: 100%;
 }
 
 .info-container{
@@ -15,60 +13,84 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color:hsl(246, 80%, 60%);
-   
+    
+    padding: 10% 0 0 10%;
+    height: 60%;
     
     display: flex;
     flex-direction: column;
-    
-    padding-left: 20%;
-    padding-top:20%;
+    justify-content: center;
+    align-items: center;
 }
 
-img{width:100px;}
-
-.user-img img{
-    max-width: 100%;
+img{
+    max-width: 50%;
     height: auto;
-
     border:white 3px solid;
     border-radius: 50%;
 }
+
 .user-text{
-    padding-top: 20%;
-    padding-bottom: 30%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-right: 15px;
 }
 
 .time-type-container{
     font-weight: 400;
     color:hsl(235, 45%, 61%);
-    line-height: 2.5;
-    padding-left: 20px;
-    padding-top:20px;
-
+    height: 30%;
+    padding: 5% 0 0 10%;
+    
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  /*  border:2px red solid;*/
+    
+}
+.time-type-container h4{
+    cursor: pointer;
+    width: fit-content;
+
 }
 
 @media (max-width:375px) {
 
-    .info-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    .user-container{
         padding: 0;
-    }
-
-
-
-    .time-type-container{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
     }
     
+    .info-container{
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .user-img{     
+        display: flex;
+        justify-content: center;
+        flex-basis:40%;
+    }
+    .user-text{
+        flex-basis:50%;
+        
+        padding:0;  
+    }
+    
+    .time-type-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        padding: 10px 0 10px 0;
+    }
 
     .time-type-container h4{
-        flex-grow: 1;
+        
+        margin:0;  
+        cursor: pointer;
     }
 }
