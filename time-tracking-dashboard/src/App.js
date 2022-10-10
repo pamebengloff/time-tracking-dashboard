@@ -8,22 +8,16 @@ function App() {
   getDataForCards();
 
   return (
-    <>
-    <div className="all">
-   
-    <div className="usercard">
-      <UserCard/>
+  <>
+  <div className="all">
+    <div className="gridish">
+       <section className="item-usercard">
+        <UserCard/>
+        </section>
+        <TimerCard/>
     </div>
-
-    <div className="timers">
-      <TimerCard/>
-      <TimerCard/>
-      <TimerCard/>
-      <TimerCard/>
-    </div>
-
-    </div>
-    </>
+  </div>
+  </>
   );
 }
 

@@ -2,6 +2,7 @@ body{
     background-color: hsl(226, 43%, 10%);
     color:white;
     font-family: 'Rubik', sans-serif;
+    margin:0;
 }
 
 h1,h2,h3,h4,h5,p{
@@ -16,41 +17,53 @@ h2{
 }
 
 h4{
-    font-size: calc(16px + (16 - 12) * ((100vw - 375px) / (1440 - 300)));
+    font-size: calc(16px + (10 - 8) * ((100vw - 375px) / (1440 - 300)));
     color: hsl(236, 100%, 87%); 
 }
 
-
 .all{
-    display:flex;  
+    display: flex;  /*flex para centrar el grid*/
     align-items: center;
-    justify-content: space-evenly;
-    height: 90vh;
-    border: 5px red solid;
+    justify-content: center;
+
+    height: 95vh;
+    border: 1px red solid;
 }
 
-.usercard{
-    display: flex;
-   
-    flex-basis:15%;
-  /*  border: 5px blue solid;*/
-    height: 50%;
+.gridish{
+    height: 60%;
+    width:80%;    
+    border: 5px blue solid;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50%); 
+    grid-auto-flow: row dense;
+    gap:10px;
+
 }
 
-.timers{
-    height: 50%;
-    border: 5px green solid;
-    flex-basis:85%;
-    display: flex;
-    flex-flow: row wrap;
-    
+/*para que ocupe dos rows en la primer columna*/
+.item-usercard{
+    grid-row: span 2;
 }
 
-@media (max-width:567px){}
 
-@media (max-width:375px) {
-    .all{
-        display:flex;
-        flex-direction: column;
+@media (max-width:420px) {
+  
+    .gridish{
+        height: 90%;
+        display: grid;
+
+        /*una sola col*/
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+     
+        grid-template-rows: repeat(1, 177px);
+        grid-auto-rows: 177px; /*height de cards implicitas*/
+        
     }
+    .item-usercard{
+        grid-row: span 1;
+    }
+ 
 }

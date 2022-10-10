@@ -4,7 +4,7 @@ import Userphoto from "../@images/image-jeremy.png";
 export function UserCard(props) {
     return (
     <>
-    <div className="user-container">
+    <div className="user-card">
 
             <div className="info-container">
                 
