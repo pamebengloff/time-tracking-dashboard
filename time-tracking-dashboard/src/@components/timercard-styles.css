@@ -1,8 +1,7 @@
 
 .timer-card{ /*lo que le da el tamaño */
-    box-sizing: border-box;
+ 
     border:3px green solid;
-
 }
 
 .timer-card div{
