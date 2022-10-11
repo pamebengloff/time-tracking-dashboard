@@ -1,9 +1,63 @@
 
 .timer-card{ /*lo que le da el tamaño */
- 
-    border:3px green solid;
+  /*  border:3px green solid;*/
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: hsl(15, 100%, 70%);
+    z-index: -1;
+}
+.icon-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: -1;
+}
+/*
+.icon-card{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding-right: 1rem;
+    height: 20%;
+   
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+
+    background-color: hsl(15, 100%, 70%);
+}*/
+
+.icon{
+    max-width: 20%;
+    height: auto;
 }
 
-.timer-card div{
-    border: 2px red solid;
+.color-work-orange{background-color: hsl(15, 100%, 70%);}
+.color-play-blue{  background-color: hsl(195, 74%, 62%);}
+.color-study-red{ background-color: hsl(348, 100%, 68%) ;}
+.color-exercise-green{background-color: hsl(145, 58%, 55%) ;}
+.color-social-violet{background-color: hsl(264, 64%, 52%);}
+.color-selfcare-yellow{background-color: hsl(43, 84%, 65%);}
+
+.info-card{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 100%;
+
+    background-color: hsl(235, 46%, 20%);
+ /*   border:blue 5px solid;*/
+
+   
+ 
+    
 }

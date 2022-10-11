@@ -27,20 +27,20 @@ h4{
     justify-content: center;
 
     height: 95vh;
-    border: 1px red solid;
+    
+ /*   border: 1px red solid;*/
 }
 
 .gridish{
     height: 60%;
     width:80%;    
-    border: 5px blue solid;
+ /*   border: 5px blue solid;*/
   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 50%); 
     grid-auto-flow: row dense;
     gap:10px;
-
 }
 
 /*para que ocupe dos rows en la primer columna*/

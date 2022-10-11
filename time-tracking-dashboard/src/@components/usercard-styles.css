@@ -26,12 +26,13 @@
    
 }
 
-img{
+.user-img img{
     max-width: 60%;
     height: auto;
     border:white 3px solid;
     border-radius: 50%;
 }
+
 
 .user-text{
     padding-top: 10%;
@@ -57,12 +58,18 @@ img{
     padding-left: 5%;
 }
 
+.time-type-container button{
+    background-color: transparent;
+    border:none;
+    padding: 0;
+}
+
 @media (max-width:420px) {
 
     .info-container{
         flex-direction: row;
         align-items: center;
-        padding: 20px 0px;
+        padding: 2% 0px;
     }
 
     .user-img{     
@@ -80,7 +87,41 @@ img{
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
-        padding: 10px 0 0 0;
+        padding: 1% 0 0 0;
+    }
+
+    .time-type-container h4{
+        padding: 0;
+        margin:0;  
+        cursor: pointer;
+    }
+}
+
+
+@media (max-height: 490px){
+    
+    .info-container{
+        flex-direction: row;
+        align-items: center;
+        padding: 2% 0px;
+    }
+
+    .user-img{     
+        display: flex;
+        justify-content: center;
+        flex-basis:40%;
+    }
+    .user-text{
+        flex-basis:50%;   
+        padding:0;  
+    }
+    
+    .time-type-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+       
     }
 
     .time-type-container h4{

@@ -1,7 +1,10 @@
 import "./usercard-styles.css";
 import Userphoto from "../@images/image-jeremy.png";
 
-export function UserCard(props) {
+export function UserCard( {sendTime} ) {
+ 
+    const mensaje = "enviado desde el hijo";
+
     return (
     <>
     <div className="user-card">
@@ -9,7 +12,7 @@ export function UserCard(props) {
             <div className="info-container">
                 
                 <div className="user-img">
-                    <img src={Userphoto} alt="" />
+                    <img className="user-img" src={Userphoto} alt="" />
                 </div>
                
                <div className="user-text">
@@ -19,9 +22,9 @@ export function UserCard(props) {
             </div>
 
             <div className="time-type-container">
-                <h4>Daily</h4>
-                <h4>Weekly</h4>
-                <h4>Monthly</h4>
+               <button onClick={ () =>  sendTime(mensaje)} > <h4>Daily</h4>  </button> 
+               <button onClick={sendTime} > <h4>Weekly</h4> </button> 
+               <button onClick={sendTime} > <h4>Monthly</h4></button> 
             </div>
     
     </div>
