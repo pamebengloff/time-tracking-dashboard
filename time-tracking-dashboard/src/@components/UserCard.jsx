@@ -4,7 +4,7 @@ import Userphoto from "../@images/image-jeremy.png";
 export function UserCard( {sendTime} ) {
  
     const mensaje = "enviado desde el hijo";
-
+console.log(mensaje)
     return (
     <>
     <div className="user-card">
